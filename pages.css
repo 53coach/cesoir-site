@@ -1,1 +1,13 @@
 .legal{padding-bottom:60px}.legal h2{font-size:1.18rem;margin:30px 0 10px}.legal p,.legal li{font-size:.9375rem;color:var(--muted);line-height:1.6}.legal p{margin:0 0 12px}.legal ul{padding-left:20px;margin:0 0 12px}.legal li{margin-bottom:8px}.legal strong{color:var(--ink)}.legal a{color:var(--red);text-decoration:underline;text-underline-offset:3px}.legal .back-link,.legal .brand{text-decoration:none}.legal .back-link{color:var(--muted)}.contact-card{background:var(--blush);border-radius:16px;padding:20px 18px;margin-bottom:8px}.contact-card h2{margin-top:0}.contact-card p{color:var(--ink)}.legal .explain{margin:0;border-bottom:1px solid var(--line);padding:6px 0}.legal .explain summary{color:var(--ink);font-size:.9375rem}.legal-links{margin-top:36px!important;text-align:center;font-size:.875rem!important}
+/* Site public (cesoir.hyas.fr) : pages légales à la largeur de l'écran, pas dans le cadre « téléphone » de l'app */
+body{background:var(--cream);padding:0}
+.app-shell{max-width:760px;margin:0 auto;padding:0 20px;box-shadow:none;min-height:0}
+.app-header{max-width:none;height:auto;margin:0;padding:32px 0 8px}
+.app-main{padding:16px 0 56px;min-height:0}
+.site-brand{display:flex;align-items:center;gap:10px;font-size:1.7rem;white-space:nowrap}
+.site-brand img{width:36px;height:36px;flex:none;border-radius:9px;object-fit:cover}
+.site-nav a{margin-left:20px;color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
+.site-nav a:hover{color:var(--ink)}
+.legal .page-heading h1{font-size:clamp(2.3rem,7vw,3.4rem)}
+@media (max-width:560px){.site-nav{display:none}}
+@media (min-width:880px){.app-header{padding-top:44px}.legal p,.legal li{font-size:1.02rem}}
