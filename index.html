@@ -45,6 +45,8 @@ h1 em { font-style: normal; color: var(--red); }
 .store svg { width: 26px; height: 26px; flex: none; }
 .store small { display: block; font-size: .78rem; opacity: .8; line-height: 1.1; }
 .store b { display: block; font-weight: 500; font-size: 1.15rem; line-height: 1.2; }
+.store.bientot { background: transparent; color: var(--muted); border: 1.5px solid var(--line); cursor: default; }
+.store.bientot:hover { transform: none; background: transparent; }
 .note { margin: 16px 0 0; font-size: .95rem; color: var(--muted); }
 
 .telephones { position: relative; display: flex; justify-content: center; align-items: flex-start; gap: 18px; }
@@ -94,10 +96,11 @@ footer a:hover { color: var(--ink); }
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.1-1.2 2.9-2.4.9-1.3 1.3-2.7 1.3-2.7s-2.4-1-2.4-4ZM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4Z"/></svg>
           <span><small>Télécharger sur</small><b>l’App Store</b></span>
         </a>
-        <a class="store" href="https://play.google.com/store/apps/details?id=com.karraz.cesoir">
+        <!-- Google Play pas encore public : remettre <a class="store" href="https://play.google.com/store/apps/details?id=com.karraz.cesoir"> … « Disponible sur » dès la mise en production. -->
+        <span class="store bientot" aria-label="Bientôt disponible sur Google Play">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8c-.3.3-.4.7-.4 1.2v16c0 .5.1.9.4 1.2l9-9.2-9-9.2Zm10.1 10.3 2.6 2.6-11.2 6.3 8.6-8.9Zm0-2.2L5.5 2l11.2 6.3-2.6 2.6Zm3.9-1.8 3 1.7c.9.5.9 1.9 0 2.4l-3 1.7-2.8-2.9 2.8-2.9Z"/></svg>
-          <span><small>Disponible sur</small><b>Google Play</b></span>
-        </a>
+          <span><small>Bientôt disponible sur</small><b>Google Play</b></span>
+        </span>
       </div>
       <p class="note">Sans compte. Les 3 premières soirées sont offertes.</p>
     </div>
