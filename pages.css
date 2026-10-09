@@ -11,3 +11,4 @@ body{background:var(--cream);padding:0}
 .legal .page-heading h1{font-size:clamp(2.3rem,7vw,3.4rem)}
 @media (max-width:560px){.site-nav{display:none}}
 @media (min-width:880px){.app-header{padding-top:44px}.legal p,.legal li{font-size:1.02rem}}
+.legal h3{font-size:1rem;margin:22px 0 8px;color:var(--ink)}.legal section#en{margin-top:44px;padding-top:8px;border-top:1px solid var(--line)}
